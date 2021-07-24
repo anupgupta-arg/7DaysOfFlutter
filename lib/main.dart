@@ -1,14 +1,15 @@
-import 'package:catalog/login_page.dart';
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import './home_page.dart';
-import 'package:flutter/material.dart';
+import './login_page.dart';
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  //const MyApp({Key? key}) : super(key: key);
+  const MyApp({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
   @override
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.light,
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
+        fontFamily: GoogleFonts.lato().fontFamily,
       ),
       darkTheme: ThemeData(
         brightness: Brightness.dark,
